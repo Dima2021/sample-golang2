@@ -17,7 +17,17 @@
       {
         "matchManagers": ["gomod"],
         "enabled": true,
-        "matchDepTypes": ["indirect"]
+        "registryUrls": ["https://proxy.golang.org"]
+      }
+    ],
+    "customEnvVariables": {
+      "GOPROXY": "https://proxy.golang.org,direct"
+    },
+   "hostRules": [
+      {
+        "matchHost": "https://proxy.golang.org",
+        "username": "admin",
+        "password": "admin"
       }
     ]
   }
