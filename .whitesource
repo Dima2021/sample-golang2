@@ -11,23 +11,8 @@
     ],
     "packageRules": [
       {
-        "matchDatasources": ["golang-version"],
-        "enabled": true
-      },
-      {
         "matchManagers": ["gomod"],
-        "enabled": true,
-        "registryUrls": ["https://proxy.golang.org"]
-      }
-    ],
-    "customEnvVariables": {
-      "GOPROXY": "https://proxy.golang.org,direct"
-    },
-   "hostRules": [
-      {
-        "matchHost": "https://proxy.golang.org",
-        "username": "admin",
-        "password": "admin"
+        "enabled": true
       }
     ]
   }
